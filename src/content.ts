@@ -13,7 +13,6 @@ export const members = [
   { name: "Trong-Thi", role: "Président", image: "trungti.webp" },
   { name: "Maximilien", role: "Trésorier", image: "maximilien.webp" },
   { name: "Arthur", role: "Secrétaire", image: null },
-  { name: "Briac", role: "VP Technique", image: "briac.webp" },
   { name: "Lina", role: "VP Com’", image: "lina.webp" },
 ];
 
@@ -34,7 +33,7 @@ export const faqs: FAQ[] = [
       "Oui, viens découvrir le club lors d’une séance d’essai. Écris-nous avant de passer pour confirmer la salle et le prochain rendez-vous. Tu pourras rencontrer les membres et voir si ça te plaît.",
     link: {
       label: "Demander une séance d’essai",
-      href: "mailto:contact@ispbchessclub.fr",
+      href: "mailto:ispbchessclub@gmail.com",
     },
   },
   {
@@ -48,7 +47,7 @@ export const faqs: FAQ[] = [
       "Le créneau habituel est le mardi de 17h15 à 19h15, sur le campus de Lyon 1 à l’ISPB. La salle peut changer d’une semaine à l’autre. Pour la reprise et le planning actuel, demande au bureau avant de venir.",
     link: {
       label: "Écrire au bureau",
-      href: "mailto:contact@ispbchessclub.fr",
+      href: "mailto:ispbchessclub@gmail.com",
     },
   },
   {

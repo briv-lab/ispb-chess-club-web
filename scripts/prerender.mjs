@@ -14,7 +14,7 @@ const structuredData = {
       name: "ISPB Chess Club",
       url: "https://ispbchessclub.pages.dev/",
       logo: "https://ispbchessclub.pages.dev/icon-512.png",
-      email: "contact@ispbchessclub.fr",
+      email: "ispbchessclub@gmail.com",
       foundingDate: "2022",
       sameAs: ["https://www.instagram.com/ispbchessclub/"],
       description:

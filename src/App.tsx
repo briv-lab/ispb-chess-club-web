@@ -7,7 +7,6 @@ import {
   Clock3,
   MapPin,
   CalendarDays,
-  Instagram,
   Mail,
   MoveUpRight,
   BookOpen,
@@ -33,6 +32,7 @@ import {
 import { useTheme } from "./hooks/use-theme";
 import { RotatingText } from "./components/rotating-text";
 import { ClubMemory } from "./components/club-memory";
+import { Instagram } from "./components/instagram";
 import { adhesion, instagram, links, members, faqs } from "./content";
 import "./styles.css";
 function App() {
@@ -153,7 +153,7 @@ function App() {
             </div>
             <div className="hero-bottom">
               <div className="avatars">
-                {["briac.webp", "lina.webp", "trungti.webp"].map((i) => (
+                {["maximilien.webp", "lina.webp", "trungti.webp"].map((i) => (
                   <img key={i} src={"/images/members/" + i} alt="" />
                 ))}
               </div>
@@ -349,7 +349,7 @@ function App() {
                   </div>
                 </div>
                 <Button asChild className="inverse-button w-full">
-                  <a href="mailto:contact@ispbchessclub.fr">
+                  <a href="mailto:ispbchessclub@gmail.com">
                     Demander la prochaine séance <ArrowUpRight />
                   </a>
                 </Button>
@@ -457,7 +457,7 @@ function App() {
               Une association étudiante, des gens passionnés, et quelques débats
               sur les ouvertures.
             </span>
-            <a href="mailto:contact@ispbchessclub.fr" className="text-link">
+            <a href="mailto:ispbchessclub@gmail.com" className="text-link">
               Un mot au bureau <Mail className="size-4" />
             </a>
           </div>
@@ -533,10 +533,7 @@ function App() {
               <br />
               Et si on a oublié quelque chose, écris-nous.
             </p>
-            <a
-              className="text-link mt-4"
-              href="mailto:contact@ispbchessclub.fr"
-            >
+            <a className="text-link mt-4" href="mailto:ispbchessclub@gmail.com">
               Contacter le bureau <Mail className="size-4" />
             </a>
           </div>
@@ -583,11 +580,8 @@ function App() {
                 <br />
                 ou juste de parler échecs ?
               </p>
-              <a
-                className="contact-mail"
-                href="mailto:contact@ispbchessclub.fr"
-              >
-                contact@ispbchessclub.fr <MoveUpRight className="size-6" />
+              <a className="contact-mail" href="mailto:ispbchessclub@gmail.com">
+                ispbchessclub@gmail.com <MoveUpRight className="size-6" />
               </a>
               <a
                 className="text-link"

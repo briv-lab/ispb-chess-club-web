@@ -16,13 +16,13 @@ npm run build
 npm run preview
 ```
 
-Le dossier `dist` peut être servi par un hébergement statique. Aucun serveur PHP n’est nécessaire. Le contact utilise l’adresse mail existante ; l’adhésion renvoie vers HelloAsso et les cours réutilisent la playlist YouTube d’origine.
+Le dossier `dist` peut être servi par un hébergement statique. Aucun serveur PHP n’est nécessaire. Le contact utilise uniquement l’adresse de l’association `ispbchessclub@gmail.com` ; l’adhésion renvoie vers HelloAsso et les cours réutilisent la playlist YouTube d’origine.
 
 ## Cloudflare Pages et référencement
 
 URL de production : `https://ispbchessclub.pages.dev/`.
 
-Dans Cloudflare Pages, choisir le nom de projet **ispbchessclub**, la commande de build **npm run build**, le dossier de sortie **dist**, et Node.js **22** (`.node-version`). Le dépôt utilise npm et son lockfile. Le build génère le HTML statique du club, puis React reprend les interactions dans le navigateur. Il n’y a pas de serveur ni de Functions à provisionner.
+Dans Cloudflare Pages, choisir le nom de projet **ispbchessclub**, la commande de build **npm run build**, le dossier de sortie **dist**, et Node.js **24 LTS** (`.node-version`). Le dépôt utilise npm et son lockfile. Le build génère le HTML statique du club, puis React reprend les interactions dans le navigateur. Il n’y a pas de serveur ni de Functions à provisionner.
 
 La configuration `wrangler.jsonc` indique également le nom et le dossier de sortie pour un futur déploiement avec Wrangler. Aucun déploiement n’est lancé automatiquement par le build.
 
