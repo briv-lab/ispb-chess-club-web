@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#234b39" />
+    <meta
+      name="description"
+      content="Le club d’échecs de l’ISPB, à l’université Lyon 1. Parties, apprentissage et tournois : tous les niveaux sont les bienvenus."
+    />
+    <link rel="canonical" href="https://ispbchessclub.pages.dev/" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#284f3b" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="ISPB Chess Club" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="ISPB Chess Club" />
+    <meta
+      property="og:title"
+      content="ISPB Chess Club | Club d’échecs à Lyon 1"
+    />
+    <meta
+      property="og:description"
+      content="Une table, un échiquier, à toi de jouer. Découvre le club d’échecs de l’ISPB à Lyon 1 : séances, cours et tournois pour tous les niveaux."
+    />
+    <meta property="og:url" content="https://ispbchessclub.pages.dev/" />
+    <meta
+      property="og:image"
+      content="https://ispbchessclub.pages.dev/og-image.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="ISPB Chess Club, deux membres jouent aux échecs sur le campus."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="ISPB Chess Club | Club d’échecs à Lyon 1"
+    />
+    <meta
+      name="twitter:description"
+      content="Parties, cours et tournois à Lyon 1. Tous les niveaux sont les bienvenus."
+    />
+    <meta
+      name="twitter:image"
+      content="https://ispbchessclub.pages.dev/og-image.jpg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="ISPB Chess Club, deux membres jouent aux échecs sur le campus."
+    />
+    <title>ISPB Chess Club | Club d’échecs à Lyon 1</title>
+    <script>
+      // Apply before first paint to avoid a bright flash on a dark system.
+      (() => {
+        let saved;
+        try {
+          saved = localStorage.getItem("ispb-theme");
+        } catch {}
+        const theme =
+          saved === "light" || saved === "dark"
+            ? saved
+            : matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light";
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+        document.querySelector('meta[name="theme-color"]').content =
+          theme === "dark" ? "#161f1a" : "#f7f6ef";
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript
+      ><style>
+        .faq-list [data-state="closed"] {
+          display: block;
+        }
+        .rotation-control,
+        .theme-toggle,
+        .theme-auto {
+          display: none;
+        }
+      </style></noscript
+    >
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ispbchessclub.pages.dev/sitemap.xml
